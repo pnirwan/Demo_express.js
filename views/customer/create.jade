@@ -1,0 +1,18 @@
+doctype
+html
+    head
+        title
+
+    body
+        h3 Customer Details
+        forms(id='form', method='post', action='/customer/create')
+        label(for='Name') Name
+        input(type='text', id='name', name='name')
+        label(for='email') Email
+        input(type='email', id='email', name='email')
+        label(for='telephone') Telephone
+        input(type='tel', id='telephone', name='telephone')
+        input(type='submit', value='Add Customer')
+
+
+
