@@ -1,5 +1,5 @@
 var express = require('express');
-//home = require('./routes/home.js');
+home = require('./routes/home.js');
 customer = require('./routes/customer.js');
 //home = require('./routes/first.js');
 //customer = require('./routes/leads.js');
@@ -119,8 +119,8 @@ app.get('/:viewname', function(req, res){
  app.use(express.static(path.join(__dirname + '/public')));
  });
 
-/*app.get('/', home.index);
-app.get('/contact', home.contact); */
+app.get('/', home.index);
+app.get('/contact', home.contact);
 
 app.get('/customer/create', customer.create);
 app.get('/customer', customer.index);
